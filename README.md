@@ -31,7 +31,7 @@ Before running the provided code, make sure you have the following prerequisites
 4. **Dependencies Installation**:
    - Install the necessary ROS 2 dependencies for the `ball_tracker` package:
      ```bash
-     rosdep install -i --from-path ~/ros2_ws/src --rosdistro foxy -y
+     rosdep install -i --from-path ~/ros2_ws/src --rosdistro humble -y
      ```
 
 5. **Build the ROS 2 Workspace**:
@@ -45,6 +45,6 @@ Before running the provided code, make sure you have the following prerequisites
    - Ensure you have a separate ROS 2 node or package publishing images on the specified image topic (e.g., `/camera/image_raw`), which is subscribed to by the `BallTrackerNode` in the provided code.
 
 7. **Camera Calibration Data**:
-   - Obtain camera calibration data (camera matrix `mtx` and distortion coefficients `dist`) using a calibration procedure like OpenCV's camera calibration. Save this data in an appropriate file format (e.g., `.npz`) and provide the correct file path in the provided code.
+   - Obtain camera calibration data (camera matrix `mtx` and distortion coefficients `dist`) using the camera calibration code we have . Save this data in an appropriate file format (e.g., `.npz`) and provide the correct file path in the provided code.
 
 Once you have the ROS 2 environment set up, the required package created, and the camera publishing images on the specified topic, you can run the provided code within the `ball_tracker` package using ROS 2 tools.
